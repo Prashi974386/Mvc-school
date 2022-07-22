@@ -8,7 +8,7 @@ import javax.persistence.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.ty.dto.Teacher;
-
+ 
 @Component
 public class TeacherDao {
 	@Autowired
@@ -24,7 +24,7 @@ public class TeacherDao {
 		return teacher;
 	}
 	
-	public Teacher getTeacherById(int id) {
+	public Teacher getTeacher(int id) {
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
 		Query query = entityManager.createQuery("select t from Teacher t where id?=1");
@@ -33,7 +33,7 @@ public class TeacherDao {
 		return teachers.get(0);
 	}
 	
-	public List<Teacher> getTeacherById(String subject) {
+	public List<Teacher> getTeacher(String subject) {
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
 		Query query = entityManager.createQuery("select t from Teacher t where subject?=1");
