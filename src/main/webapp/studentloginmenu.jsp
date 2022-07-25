@@ -33,11 +33,10 @@ li a:hover {
 </head>
 <body>
 
-<h1 align="center">WellCome to our School</h1><br>
+<h1 align="center">USER MENU</h1><br>
 <ul>
-  <li><a href="aboutschool.jsp">About</a></li>
-  <li><a href="studentmenu.jsp">Student</a></li>
-  <li><a href="teachermenu.jsp">Teacher</a></li>
+  <li><a href="">View</a></li>
+  <li><a href="">Concern</a></li>
 </ul>
 </body>
 </html>
